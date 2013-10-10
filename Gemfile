@@ -44,5 +44,5 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'act-fluent-logger-rails'
+#gem 'act-fluent-logger-rails'
 gem 'haml-rails'

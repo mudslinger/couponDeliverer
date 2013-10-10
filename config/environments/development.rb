@@ -27,12 +27,4 @@ CouponDeliverer::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.log_level = :debug
-  config.logger = ActFluentLoggerRails::Logger.new(
-    log_tags: {
-      ip: :ip,
-      ua: :user_agent,
-      uid: ->(request) { request.session[:uid] }
-    }
-  )
 end
