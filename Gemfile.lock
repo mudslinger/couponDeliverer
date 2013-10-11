@@ -1,9 +1,6 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    act-fluent-logger-rails (0.1.2)
-      fluent-logger
-      rails (~> 4.0.0)
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
       mail (~> 2.5.3)
@@ -126,8 +123,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  act-fluent-logger-rails
   coffee-rails (~> 4.0.0)
+  fluent-logger
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails

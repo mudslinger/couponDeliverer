@@ -13,7 +13,9 @@ CouponDeliverer::Application.routes.draw do
 
   #ブレイン用つなぎクーポン利用アドレス
   get 'cb/use/:coupon_code/:no' => 'coupon#use'
-
+  get '/:coupon_code/:no' => 'coupon#use'
+  get 'index.html' => 'coupon#index'
+  get '/' => 'coupon#index'
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
