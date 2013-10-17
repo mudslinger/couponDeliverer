@@ -47,3 +47,4 @@ end
 #gem 'act-fluent-logger-rails'
 gem 'haml-rails'
 gem 'fluent-logger'
+gem 'newrelic_rpm'
