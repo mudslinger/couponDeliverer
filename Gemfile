@@ -48,3 +48,4 @@ end
 gem 'haml-rails'
 gem 'fluent-logger'
 gem 'newrelic_rpm'
+gem 'unicorn'
