@@ -4,13 +4,13 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def log(tag,obj)
-    begin
-      Fluent::Logger::FluentLogger.open(
-        FLUENT_CONFIG[:tag],
-        host: FLUENT_CONFIG[:host],
-        port: FLUENT_CONFIG[:port]
-      )
-      Fluent::Logger.post(tag,obj)
+    # begin
+    #   Fluent::Logger::FluentLogger.open(
+    #     FLUENT_CONFIG[:tag],
+    #     host: FLUENT_CONFIG[:host],
+    #     port: FLUENT_CONFIG[:port]
+    #   )
+    #   Fluent::Logger.post(tag,obj)
     end
   end
 end
