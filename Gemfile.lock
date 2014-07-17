@@ -37,9 +37,6 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
-    fluent-logger (0.4.6)
-      msgpack (>= 0.4.4, < 0.6.0, != 0.5.3, != 0.5.2, != 0.5.1, != 0.5.0)
-      yajl-ruby (~> 1.0)
     haml (4.0.4)
       tilt
     haml-rails (0.4)
@@ -63,10 +60,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25)
     minitest (4.7.5)
-    msgpack (0.5.6)
     multi_json (1.8.2)
     mysql2 (0.3.14)
-    newrelic_rpm (3.6.9.171)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -124,19 +119,16 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  fluent-logger
   haml-rails
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
-  newrelic_rpm
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc

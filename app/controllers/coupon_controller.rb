@@ -1,9 +1,5 @@
 class CouponController < ApplicationController
-
   FAR_FEATURE = Time.mktime(2099, 12, 31).freeze
-
-  def index
-  end
 
   def use
     user_number = params[:no]
@@ -22,14 +18,14 @@ class CouponController < ApplicationController
 
     @expired = 0.days.ago >= ymd + 1.days
     #使用履歴を保存
-    log(
-      'blayn.coupon.use.history',
-      {
-        user_number: user_number,
-        coupon_name: coupon_name,
-        remote_ip: request.remote_ip
-      }
-    ) if not @expired
+    # log(
+    #   'blayn.coupon.use.history',
+    #   {
+    #     user_number: user_number,
+    #     coupon_name: coupon_name,
+    #     remote_ip: request.remote_ip
+    #   }
+    # ) if not @expired
   end
 
 end

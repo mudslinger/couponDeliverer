@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
     #     port: FLUENT_CONFIG[:port]
     #   )
     #   Fluent::Logger.post(tag,obj)
-    end
+    #end
   end
 end
